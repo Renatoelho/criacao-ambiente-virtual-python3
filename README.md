@@ -17,7 +17,7 @@ Primeiro você tem que descobrir qual é a versão do Python 3 que está instala
 - Utilize o seguinte comando:
 
 ````
-$ python3 -V
+python3 -V
 ````
  
 ![Versão Python 3](https://drive.google.com/uc?export=view&id=1zq6YUCBXtRmzShJApmjxTIObJZLW3dI4)
@@ -25,13 +25,13 @@ $ python3 -V
 Nesse nosso exemplo vamos utilizar o Python3 na sua versão ````Python 3.8.10````, caso você não tenha ele instalado instale com o seguinte comando:
 
 ````
-$ sudo apt install python3.8 -y
+sudo apt install python3.8 -y
 ````
 
 - Pronto, agora vamos instalar a biblioteca ````VENV```` que é responsável pela criação dos ambientes virtuais.
 
 ````
-$ sudo apt install python3.8-venv -y  
+sudo apt install python3.8-venv -y  
 ````
 
 ![Instalação VENV](https://drive.google.com/uc?export=view&id=1zrfv_pn2z9H47WgDkvSOdp-F2GDrPAo9)
@@ -41,13 +41,13 @@ Quando você for fazer a administração do seu ambiente instalando novas biblio
 - Criando o ambiente virtual ````env````
 
 ````
-$ python3 -m venv env
+python3 -m venv env
 ````
 
 - Ativar o ambiente virtual
 
 ````
-$ source env/bin/activate
+source env/bin/activate
 ````
 
 ![Ativação ENV](https://drive.google.com/uc?export=view&id=1zrtv0BC3J3tN58eHHx2WMsZYY53M1oCk)
@@ -55,7 +55,7 @@ $ source env/bin/activate
 - Instalando bibliotecas no ambiente
 
 ````
-$ pip install pandas 
+pip install pandas 
 ````
 
 ![Instalando Pandas](https://drive.google.com/uc?export=view&id=1zxNNx2fou7DyTlR49Ksw-Bcxfv-tO0w2)
@@ -65,7 +65,7 @@ Agora temos que localizar o interpretador do nosso ambiente para adiciona-lo no 
 - Com o ambiente ativo execute o comando ````which````, esse comando vai nos mostrar onde está no interpretador, e com ele em mãos vamos adicionar no nosso primeiro código em Python ````teste.py````.
 
 ````
-$ which python3
+which python3
 ````
 
 ![Executando Which](https://drive.google.com/uc?export=view&id=19-iSoLHBLEVoQz7hXwt7POA4APVh9uX5)
