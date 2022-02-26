@@ -4,7 +4,7 @@
 
 >> Sistema operacional Linux (Ubuntu 20.04.2 LTS)  <br/>Memória RAM de 4GB ou mais  <br/>Python 3 instalado
 
-Os ambientes virtuais no Python são muito úteis quando você quer criar várias aplicações Python em um único servidor, mas que cada aplicação tenha a necessidade de trabalhar com bibliotecas distintas ou até mesmo em comum só que com conversões diferentes. <br/>Exemplo de dois projetos de ciência de dados, onde o primeiro utilize as versões ````Pandas 1.3.2```` e ````NumPy 1.17```` e o segundo utilize o ````Pandas 1.3.4```` e ````Numpy 1.21````, supostamente por um possível comportamento diferente entre algumas funções ````Numpy````, isso pode ser útil quando for necessário atualizar a versão de alguma biblioteca em seus projetos que já estejam em produção, pois assim você teria duas versões do seu código fazendo os testes necessários na nova verão, sem colocar em risco seu programa principal.
+Os ambientes virtuais no Python são muito úteis quando você quer criar várias aplicações Python em um único servidor, mas que cada aplicação tenha a necessidade de trabalhar com bibliotecas distintas ou, até mesmo em comum, só que com conversões diferentes. <br/>Exemplo de dois projetos de ciência de dados, onde o primeiro utilize as versões ````Pandas 1.3.2```` e ````NumPy 1.17```` e o segundo utilize o ````Pandas 1.3.4```` e ````Numpy 1.21````, supostamente por um possível comportamento diferente entre algumas funções ````Numpy````. Isso pode ser útil quando for necessário atualizar a versão de alguma biblioteca em seus projetos que já estejam em produção, pois assim você teria duas versões do seu código, fazendo os testes necessários na nova versão, sem colocar em risco seu programa principal.
 
 - Aqui seria uma representação gráfica de como é a distribuição de ambientes virtuais em um servidor, que poderia ser uma máquina Linux, Windows ou MAC.
 
@@ -22,13 +22,13 @@ python3 -V
  
 ![Versão Python 3](https://drive.google.com/uc?export=view&id=1zq6YUCBXtRmzShJApmjxTIObJZLW3dI4)
 
-Nesse nosso exemplo vamos utilizar o Python3 na sua versão ````Python 3.8.10````, caso você não tenha ele instalado instale com o seguinte comando:
+Nesse nosso exemplo vamos utilizar o Python3 na sua versão ````Python 3.8.10````. Caso você não tenha ele instalado, instale com o seguinte comando:
 
 ````
 sudo apt install python3.8 -y
 ````
 
-- Pronto, agora vamos instalar a biblioteca ````VENV```` que é responsável pela criação dos ambientes virtuais.
+- Pronto, agora vamos instalar a biblioteca ````VENV````, que é responsável pela criação dos ambientes virtuais.
 
 ````
 sudo apt install python3.8-venv -y  
@@ -36,7 +36,7 @@ sudo apt install python3.8-venv -y
 
 ![Instalação VENV](https://drive.google.com/uc?export=view&id=1zrfv_pn2z9H47WgDkvSOdp-F2GDrPAo9)
 
-Quando você for fazer a administração do seu ambiente instalando novas bibliotecas e removendo outras a ativação via terminal é importante, já na execução dos códigos pode ser feita pelo terminal com o ambiente ativo ou com o interpretador do ambiente em questão adicionado no cabeçalho de seus códigos.
+Quando você for fazer a administração do seu ambiente instalando novas bibliotecas e removendo outras, a ativação via terminal é importante. Já na execução dos códigos, pode ser feita pelo terminal, com o ambiente ativo ou com o interpretador do ambiente em questão, adicionado no cabeçalho de seus códigos.
 
 - Criando o ambiente virtual ````env````
 
@@ -60,9 +60,9 @@ pip install pandas
 
 ![Instalando Pandas](https://drive.google.com/uc?export=view&id=1zxNNx2fou7DyTlR49Ksw-Bcxfv-tO0w2)
 
-Agora temos que localizar o interpretador do nosso ambiente para adiciona-lo no cabeçalho do código Python.
+Agora temos que localizar o interpretador do nosso ambiente, para adiciona-lo no cabeçalho do código Python.
 
-- Com o ambiente ativo execute o comando ````which````, esse comando vai nos mostrar onde está no interpretador, e com ele em mãos vamos adicionar no nosso primeiro código em Python ````teste.py````.
+- Com o ambiente ativo, execute o comando ````which````, que irá nos mostrar onde está no interpretador e, com ele em mãos, vamos adicionar no nosso primeiro código em Python ````teste.py````.
 
 ````
 which python3
@@ -74,13 +74,13 @@ Crie o arquivo ````teste.py```` e adicione o interpretador.
 
 ![Print Arquivo teste.py](https://drive.google.com/uc?export=view&id=195WD6FhsD2Hhv-CSO5_nZPRZFNpgleRh)
 
-Testando a execução do nosso código, nesse exemplo aqui vamos importar a biblioteca Pandas e executar um print, pois como nosso ambiente ````env```` tem o Pandas instalado nosso código vai ser executado com sucesso.
+Testando a execução do nosso código, nesse exemplo, vamos importar a biblioteca Pandas e executar um print, pois como nosso ambiente ````env```` tem o Pandas instalado, nosso código será executado com sucesso.
 
 ![Execução Arquivo teste.py](https://drive.google.com/uc?export=view&id=19JSZTvq-SHGRkOcoEYkpWsiKE8qDdTKt)
 
-Pronto, agora você já sabe como criar ambientes virtuais no Python, como fazer sua administração e o melhor como executar seus códigos no ambiente.
+Pronto! Agora você já sabe como criar ambientes virtuais no Python, como fazer sua administração e o melhor, como executar seus códigos no ambiente.
 
-Em breve volto com mais dicas de Python.
+Em breve voltarei com mais dicas de Python.
 
 <b>Até!</b>
 
